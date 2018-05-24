@@ -1,112 +1,154 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Msindone</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Serif'>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "PT Serif", sans-serif}
-</style>
-<body class="w3-light-grey">
+<body id="myPage">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-indigo">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-indigo"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Experience</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">School</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Extra Curriculars</a>
+   
   
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="headshot3.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Meagan Sindone</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Computer Science Engineer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>Woodhaven, Michigan</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>msindone@umich.edu</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>734-308-2538</p>
-          <hr>
+ </div>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo"></i>Skills</b></p>
-          <p>C++ - Proficient</p>
-          <p>Microsoft Office - Proficient</p>
-          <p>Visual Studio IDE - Proficient</p>
-          <p>MATLAB - Competent</p>
-          <p>SQL - Competent</p>
-          <p>HTML/CSS/Javascript - Competent</p>
-           
-          
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-indigo"></i>Languages</b></p>
-          <p>English - First Language/Proficient</p>
-          
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Programming Assistant/ HITS at Michigan Medicine</b></h5>
-          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2017 - <span class="w3-tag w3-indigo w3-round">Current</span></h6>
-          <p>Assisted an IT team with running searches and migrating in Spunk, developed automated reports to document collected data, designed a Disaster Recovery Website, researched and used VR technology, and worked on other various projects.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Research Assistant / University of Michigan </b></h5>
-          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2016 - April 2017</h6>
-          <p>Assisted in the research project “How Autonomous Vehicle Technology Will Transform the Automobile Industry". I obtained information on different projects in the automobile industry to suggest further improvements. I worked with a team to gather information used the knowledge obtained to form conclusions and predictions then presented findings at a symposium.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>General Employee / Tim Hortons</b></h5>
-          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2016 - July 2017</h6>
-          <p>Maintained the store, prepared food, managed drive-thru window and cash register. Worked a lot on communicating with customers and understanding their needs. </p><br>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>University of Michigan Ann Arbor - College of Engineering</b></h5>
-          <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2016 - <span class="w3-tag w3-indigo w3-round">Current</span></h6>
-          <p>Bachelor Degree in Computer Science Engineering.</p>
-          <p>Relevent Courses: Intro to Programming, Introductory Date Structures, Data Structures & Algorithms, Gaming for the Greater Good, Discrete Math, Programming & Computing for Computer Scientists, Intro to Probability Statistics</p>
-          <hr>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
   </div>
-  
-  <!-- End Page Container -->
+</div>
+<div class="w3-panel w3-padding-16">
+</div>
+<!-- Header -->
+<header class="w3-container w3-white w3-center" style="padding:20px 40px">
+</header>
+<!-- Second Grid -->
+<div class="w3-row-padding w3-white w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img class="w3-circle" src="headshot1-2.jpg" alt="ME">
+      
+
+    </div>
+
+
+    <div class="w3-twothird">
+      <h1>Hi, I'm Meagan</h1>
+      <h5 class="w3-padding-32">I'm currently a junior at the University of Michigan Ann Arbor studying Computer Science Engineering. I enjoy coding, design, experiencing new things, and dogs. I spend most of my time studying, working, or dancing.</h5>
+
+      <p class="w3-text-grey"> For more information about me, click on the tabs above. For contact information, scroll down. For a quick view of me, click the button below. I hope you enjoy my portfolio!</p>
+        <div class="w3-container w3-display-bottomright w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-indigo" title="Go To W3.CSS">Quick Look</button>
+  </div>
 </div>
 
-<footer class="w3-container w3-indigo w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <a class="fa fa-facebook-official w3-hover-opacity" href='https://www.facebook.com/M.sindone'></a>
-  <a class="fa fa-instagram w3-hover-opacity" href='https://www.instagram.com/meagnichole_28/'></a>
-  <a class="fa fa-github w3-hover-opacity" href='https://github.com/msindone'></a>
-  <a class="fa fa-linkedin w3-hover-opacity" href='https://www.linkedin.com/in/meagan-sindone-a57313138/'></a>
-  <p></p>
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-indigo w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-indigo w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Don't have a lot of time? </h4>
+      <h5>Click below for a one page summary of me <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p><a class="w3-text-indigo" href="onePage.html">One page look</a></p>
+      <p><a class="w3-text-indigo" href="Resume_MSindone.pdf">My Resume</a></p>
+    </div>
+  </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-indigo w3-bottombar">Feel free to contact me</span></div>
+      <p><i class="fa fa-map-marker w3-text-indigo w3-xlarge"></i>&nbsp;&nbsp; Michigan, US</p>
+      <p><i class="fa fa-phone w3-text-indigo w3-xlarge"></i>&nbsp;&nbsp;+1 734-308-2538<p>
+      <p><i class="fa fa-envelope-o w3-text-indigo w3-xlarge"></i>&nbsp;&nbsp;(preferred contact) msindone@umich.edu</p>
+
+    </div>
+    <div class="w3-col m7">
+      <div class="w3-display-container w3-animate-opacity">
+  <img src="boat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  
+</div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Find me on social media!</h4>
+  <a class="w3-button w3-large w3-indigo w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Github"><i class="fa fa-github"></i></a>
+  <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-indigo" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  
+  <p>Made with w3.css and bootstrap</p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-indigo w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
 </footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
 </body>
 </html>
