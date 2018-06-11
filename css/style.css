@@ -194,8 +194,8 @@ section.resume-section .resume-item .resume-date {
       font-size: 1.5em; } }
 
 header.masthead {
-  padding-top: 5px;
-  padding-bottom: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
   
   background: #B486AB; }
