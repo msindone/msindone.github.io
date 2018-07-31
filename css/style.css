@@ -74,8 +74,29 @@ section {
     font-size: 3em;
     margin: 0; }
 
-
-
+.logo-container .logo{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #333333;
+    width: 50px;
+    float: left;
+}
+.logo-container .brand{
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 20px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+}
+.logo-container{
+    margin-top: 10px;
+}
+.logo-container .logo img{
+    width: 100%;
+}
 section.success {
   color: black;
   background: #8073B9; }
@@ -177,9 +198,9 @@ section.resume-section .resume-item .resume-date {
     transition: padding-top 0.3s, padding-bottom 0.3s; }
     #mainNav .navbar-brand {
       font-size: 2em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s; }
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
       color: white;
       border-radius: 3px;
@@ -192,7 +213,15 @@ section.resume-section .resume-item .resume-date {
     padding-bottom: 5px; }
     #mainNav.navbar-shrink .navbar-brand {
       font-size: 1.5em; } }
-
+header.mastheads {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  
+  background: #8073B9; }
+  header.masthead img {
+    display: block;
+    margin: 0 auto 5px; }
 header.masthead {
   padding-top: 50px;
   padding-bottom: 50px;
