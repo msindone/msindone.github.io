@@ -1,13 +1,47 @@
-// Variables
+/*font Variables*/
+$ral: 'Raleway', sans-serif;
+$yell: 'Yellowtail', cursive;
+$bree: 'Bree Serif', serif;
 
-// Gray and Brand Colors for use across theme
+/*Color Variables*/
 
-$theme-primary: #2C3E50;
-$theme-success: #18BC9C;
+$baseColor: #fec608;
+$dip: #222222;  
+$pfont: #333333;
+$gray: #666666;
 
-$gray-base: #000;
-$gray-darker: lighten($gray-base, 13.5%);
-$gray-dark: lighten($gray-base, 20%);
-$gray: lighten($gray-base, 33.5%);
-$gray-light: lighten($gray-base, 46.7%);
-$gray-lighter: lighten($gray-base, 93.5%);
+
+
+// Mixins
+@mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+.col-md-offset-right-1 {
+    margin-right: 8.33333333%;
+}
+// Font family link
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Raleway:100,200,300,400,500,600,700,800,900|Yellowtail');
+
+//@font-face {
+//    font-family: "ralH";
+//    src: url(../fonts/theme-font/Raleway-Heavy.woff);
+//}
+//@font-face {
+//    font-family: "monR";
+//    src: url(../fonts/theme-font/Montserrat-Regular.woff);
+//}
+//@font-face {
+//    font-family: "monB";
+//    src: url(../fonts/theme-font/Montserrat-Bold.woff);
+//}
